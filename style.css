@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Segoe UI EMOJI, Segoe UI, Segoe, serif, sans-serif;
+    box-sizing: border-box;
+    outline-offset: 3px;
+    transition: .3s ease;
+    border: none;
+}
+
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#submitForm {
+    background: #0005;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    flex: 0 1 468px;
+
+    display: grid;
+    gap: 1em;
+
+}
+
+#submitForm section {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submitForm .section_inputs label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#submitForm .section_inputs label span {
+    font-weight: 600;
+    font-size: .9em;
+}
+
+#submitForm .section_inputs label input {
+    padding: .5em;
+    border-radius: .5em;
+}
+
+#submitForm .section_submit {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitForm .section_submit button {
+    padding: .7em;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+#submitForm .section_submit button[type="submit"] {
+    border: 2px solid blue;
+    color: blue;
+    background: none;
+}
+
+#submitForm .section_submit button[type="submit"]:hover,
+#submitForm .section_submit button[type="submit"]:focus {
+    background: blue;
+    color: white;
+}
+
+#submitForm .section_submit button[type="reset"] {
+    border: 2px solid crimson;
+    color: crimson;
+    background: none;
+}
+
+#submitForm .section_submit button[type="reset"]:hover,
+#submitForm .section_submit button[type="reset"]:focus {
+    background: crimson;
+    color: white;
+}

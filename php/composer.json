@@ -1,0 +1,21 @@
+{
+    "name": "test/test",
+    "description": "Simple REST API TEST",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Test\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roald2000",
+            "email": "roalddelacruz2000@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "bramus/router": "*",
+        "symfony/dotenv": "*"
+    }
+}

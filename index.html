@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div id="root">
+        <form id="submitForm">
+            <section class="section_title">
+                <h1>Simple Form Submission</h1>
+            </section>
+            <section class="section_inputs">
+                <label for="txt_lastname">
+                    <span>Lastname</span>
+                    <input autofocus type="text" id="last_name" value="" placeholder="Input Data" required>
+                </label>
+                <label for="txt_firstname">
+                    <span>Firstname</span>
+                    <input type="text" id="first_name" value="" placeholder="Input Data" required>
+                </label>
+                <label for="email_email">
+                    <span>Email</span>
+                    <input type="email" id="email" value="" placeholder="Input Data" required>
+                </label>
+            </section>
+            <section class="section_submit">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
