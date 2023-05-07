@@ -1,6 +1,6 @@
 
 const request = async (route, params) => {
-    const base_url = 'http://localhost:3302/api'; // dont hardcode base route for your api unless you are in development hehe
+    const base_url = 'http://localhost:2000/api'; // dont hardcode base route for your api unless you are in development hehe
     return await fetch(`${base_url}${route}`, {
         body: JSON.stringify(params),
         method: 'POST'
